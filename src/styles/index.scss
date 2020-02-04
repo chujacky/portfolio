@@ -1,0 +1,80 @@
+.index-page {
+  .columns {
+    margin:0;
+
+    .user-profile {
+      padding: 15px;
+      background-color: #363636;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      color: #FFF;
+
+      .name{
+        font-size: 30px;
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+
+      .thumbnail {
+        margin-bottom: 20px;
+ 
+        .gatsby-image-wrapper {
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+        }
+      }
+
+      .intro {
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 20px; 
+
+        a:hover {
+          opacity: 0.6;
+          color: #3273dc;
+        }
+      }
+
+      .social-wrapper {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        margin-bottom: 30px;
+
+        .social-item {
+          .links {
+            filter: invert(1);
+            
+            &:hover {
+              opacity: 0.6;
+            }
+
+            svg {
+              width: 24px;
+              height: 24px
+            }
+          }
+        }
+      }
+
+      .skills-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .links{
+          padding: 5px;
+          color: #FFF;
+
+          &:hover {
+            opacity: 0.6;
+          }
+        }
+      }
+    }
+  }
+}
